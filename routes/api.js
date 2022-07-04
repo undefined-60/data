@@ -2,18 +2,18 @@ const tradutor = require("@vitalets/google-translate-api")
 const __path = process.cwd()
 const express = require('express')
 const fs = require('fs')
-const knights = require("knights-canvas")
+//const knights = require("knights-canvas")
 const creator = "#carlos</>"
-const canvac = require('canvacord')
+//const canvac = require('canvacord')
 const ytdl = require('ytdl-core')
-const ytpl = require('ytpl')
+//const ytpl = require('ytpl')
 const secure = require('ssl-express-www')
 const cors = require('cors')
-const scrapeYt = require("scrape-yt")
+//const scrapeYt = require("scrape-yt")
 const  cheerio = require('cheerio')
-const dcanvas = require('discord-canvas')
-const request = require('request')
-const TikTokScraper = require('tiktok-scraper')
+//const dcanvas = require('discord-canvas')
+//const request = require('request')
+//const TikTokScraper = require('tiktok-scraper')
 const router  = express.Router()
 const { http, agent, aleatory } = require(__path + '/lib/fetcher.js')
 const options = require(__path + '/lib/options.js')
@@ -344,6 +344,7 @@ res.type('png'); res.send(fs.readFileSync(__path + '/img.jpg'))
 //NSFW
 
 //Card
+/*
 router.get('/others/welcome1', async (req, res, next) => {
 if (!req.query.members) return res.json({ creator: '#carlos</>', code: 200, message: 'canot acess "member" in request' })
 if (!req.query.avatar) return res.json({ creator: '#carlos</>', code: 200, message: 'canot acess "avatar" in request' })
@@ -782,7 +783,7 @@ result : user
  })
  })
 })
-
+*/
 router.get('/search/anime', async (req, res, next) => {
 var input = req.query.apikey
 var inpul = req.query.name
